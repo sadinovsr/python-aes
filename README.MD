@@ -36,33 +36,33 @@ where ``<filename>`` is file inside documents folder then needs to be encrypted 
 
 ### Examples
 
-Given that in ``\documents`` folder exists file ``test.doc``:
+Given that in ``\documents`` folder exists file ``test.txt``:
 
 #### Encrypt
 
 To encrypt file and generate new key:
 
 ```
-python main.py test.doc -e -g
+python main.py test.txt -e -g
 ```
 
-The above command will generate new key inside ``\src\key.key`` and will create encrypted file ``\documents\test.doc.enc`` and will delete original file ``\documents\test.doc`` and will generate initialization vector and store it in ``\src\ivs\test.doc.iv.key``
+The above command will generate new key inside ``\src\key.key`` and will create encrypted file ``\documents\test.txt.enc`` and will delete original file ``\documents\test.txt`` and will generate initialization vector and store it in ``\src\ivs\test.txt.iv.key``
 
 **OR**
 
 To encrypt file with previously generated key:
 
 ```
-python main.py test.doc -e
+python main.py test.txt -e
 ```
 
-The above command will create encrypted file ``\documents\test.doc.enc`` and will delete original file ``\documents\test.doc`` and will generate initialization vector and store it in ``\src\ivs\test.doc.iv.key``
+The above command will create encrypted file ``\documents\test.txt.enc`` and will delete original file ``\documents\test.txt`` and will generate initialization vector and store it in ``\src\ivs\test.txt.iv.key``
 #### Decrypt
 
 To decrypt the file:
 
 ```
-python main.py test.doc -d
+python main.py test.txt -d
 ```
 
-The above command will create decrypted file ``\documents\test.doc`` and will delete previously encrypted file ``\documents\test.doc.enc`` and will delete initialization vector from ``\src\ivs\test.doc.iv.key``
+The above command will create decrypted file ``\documents\test.txt`` and will delete previously encrypted file ``\documents\test.txt.enc`` and will delete initialization vector from ``\src\ivs\test.txt.iv.key``
