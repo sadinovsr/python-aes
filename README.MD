@@ -10,6 +10,7 @@ Things that are needed:
 
 - python installed
 - pip installed
+- need to create folder named 'ivs' inside src folder
 - Crypto library for random bytes function
 
 ```
